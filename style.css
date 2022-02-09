@@ -1,0 +1,308 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Inicio header-style  */
+.header-style{
+    width: 100%;
+    height: 650px;
+    background-image: linear-gradient(to top, rgba(255, 241, 235, 0.651) 0%, rgba(172, 225, 249, 0.651) 100%), url("assets/oceano-pacifico.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width:50px;
+    height: 50px;   
+} 
+
+.ul-header{
+    display: flex;
+}
+
+.li-header{
+    margin-left: 15px;
+    list-style: none;
+    
+}
+
+.link-header{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-decoration:none;
+    transition: all 0,5s;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.61);
+    border-style: solid;
+    border-radius: 30px;
+}
+.link-header:hover{
+    text-decoration: underline;
+}
+
+.wave-header{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* Fin header-style */
+
+/* Sección imagen botella */
+.img-botella{
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    margin: 0 50px; 
+}
+.img-botella img{
+    width: 10%;
+    position: absolute;
+}
+/* Fin Sección imagen botella */
+
+/* Estilos generales */
+.container,
+.wave-container{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    pad: 0 0 80px 0;
+}
+.container{
+    padding: 80px 0 ;
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Sección Nosotros */
+.website{
+    display: flex;
+    justify-content: space-between;
+}
+.website img{
+    width: 48%;
+}
+.website .text-main{
+    width: 40%;
+}
+.parrafo{
+    text-align:justify ;
+    margin-bottom: 20px;
+}
+/* Fin sección Nosotros */
+
+/* Sección Destilación */
+.destilación{
+    background:#CBF1F5 ;
+}
+/* Fin sección Destilación*/
+
+/* Sección Botánicos */
+.content-cards{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    width: 30%;
+    text-align: center;
+    height: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
+    transform: scale(1);
+    transition: transform 0.6s;
+}
+.card:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+}
+.card i{
+    margin: 30px 0 20px 0;
+    color: #A6E3E9;
+    font-size: 50px;
+}
+.card p{
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+/* Fin sección Botánicos */
+
+/* Sección Cocktails */
+.background-cocktails{
+    background: #CBF1F5;
+}
+.parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    grid-auto-rows: minmax(50px, auto);
+    gap: 3px;
+    padding: 0 150px;
+    grid-auto-flow: dense;
+  }
+ 
+.parent img{
+    width: 100%;
+}
+/* Fin sección Cocktails */
+
+/* Inicio sección contacto */
+/* Footer */
+
+footer{
+    background: #E3BEC6;
+    color: #fff;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input{
+    background: transparent;
+    border: 0;
+    color: #fff;
+    outline: none;
+    border: 1px  solid #fff;
+    padding: 20px 10px;
+}
+
+.input::placeholder{
+    color: #fff;
+    font-family: 'raleway', 'sans-serif';
+}
+
+input[type="text"], 
+input[type="email"]{
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 30px;
+}
+
+.form textarea{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+input[type="submit"]{
+    width: 120px;
+    text-align: center;
+    padding: 14px 0;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    color: rgb(226, 149, 194);
+    background: #fff;
+}
+
+@media screen and (max-width:800px){
+
+/* Estilos generales */
+.titulo{
+    font-size: 35px;
+    text-align: center;
+}
+
+.destilación{
+    text-align: center;
+}
+/* Fin estilos generales */
+
+/* Sección nosotros */
+.website{
+    flex-direction:column-reverse ;
+    justify-content:center ;
+    align-items: center;
+}
+
+.website img {
+    width: 75%;
+}
+
+.website .text-main{
+    width: 100%;
+}
+/* Fin sección nosotros */
+
+/* Sección botánicos */
+
+.card{
+    width: 90%;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+}
+
+/* Fin sección botánicos */
+
+@media screen and (max-width:400px) {
+    /* Estilos generales */
+    .titulo{
+        font-size: 30px;
+        text-align: center;
+    }
+    .tituloN{
+        margin: 30px;
+    }
+    /* Fin estilos generales */
+
+    /* Inicio header */
+    .ul-header{
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .li-header{
+        height: 50px;
+    }
+    /* Fin header */
+
+    /* Img Botella */
+    .img-botella img{
+        width: 25%;
+    }
+    /* Fin Img botella */
+
+    /* Inicio Cocktails */
+    .parent{
+        padding: 0 95px;
+    }
+
+
+    /* Fin Cocktails */
+
+    /* Inicio Nosotros */
+    .website .text-main{
+        margin-bottom: 30px;
+    }
+    /* Fin nosotros */
+}
