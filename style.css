@@ -31,7 +31,15 @@ nav{
 
 .logo img{
     width:50px;
-    height: 50px;   
+    height: 50px;
+    transform: scale(1);
+    transition: transform 0.6s;  
+}
+.logo img:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    cursor: pointer;
+    
 } 
 
 .ul-header{
@@ -80,7 +88,7 @@ nav{
 /* Fin Sección imagen botella */
 
 /* Estilos generales */
-.container,
+.contenedor,
 .wave-container{
     width: 90%;
     max-width: 1000px;
@@ -88,7 +96,7 @@ nav{
     margin: auto;
     pad: 0 0 80px 0;
 }
-.container{
+.contenedor{
     padding: 80px 0 ;
 }
 
@@ -104,8 +112,8 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-.website img{
-    width: 48%;
+.img-nosotros{
+    width: 100%;
 }
 .website .text-main{
     width: 40%;
@@ -180,6 +188,24 @@ footer{
     color: #fff;
 }
 
+.logo-footer{
+    width: 35%;
+}
+.footer-img{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-img img{
+    width: 45px;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.footer-desings{
+    display: flex;
+    justify-content:center ;
+}
+
 .form{
     display: flex;
     flex-wrap: wrap;
@@ -189,14 +215,14 @@ footer{
 .input{
     background: transparent;
     border: 0;
-    color: #fff;
+    color: #E3BEC6;
     outline: none;
-    border: 1px  solid #fff;
+    border: 1px  solid #E3BEC6;
     padding: 20px 10px;
 }
 
 .input::placeholder{
-    color: #fff;
+    color: #E3BEC6;
     font-family: 'raleway', 'sans-serif';
 }
 
@@ -221,8 +247,10 @@ input[type="submit"]{
 input[type="submit"]:hover{
     cursor: pointer;
     color: rgb(226, 149, 194);
-    background: #fff;
+    background: #E3BEC6;
 }
+/* Fin footer */
+
 
 @media screen and (max-width:800px){
 
