@@ -119,14 +119,21 @@ nav{
     width: 40%;
 }
 .parrafo{
-    text-align:justify ;
+    text-align:center ;
     margin-bottom: 20px;
 }
 /* Fin sección Nosotros */
 
 /* Sección Destilación */
 .destilación{
-    background:#CBF1F5 ;
+    background-image:linear-gradient(to top, rgba(255, 241, 235, 0.932) 0%, rgba(172, 225, 249, 0.651) 100%), url("assets/destilacion-teaser.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    
 }
 /* Fin sección Destilación*/
 
@@ -138,9 +145,8 @@ nav{
     flex-wrap: wrap;
 }
 .card{
-    width: 30%;
+    width: 35%;
     text-align: center;
-    height: 300px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .5);
     transform: scale(1);
     transition: transform 0.6s;
@@ -202,8 +208,7 @@ footer{
     margin-right: 1px;
 }
 .footer-desings{
-    display: flex;
-    justify-content:center ;
+    text-align: center;
 }
 
 .form{
@@ -288,9 +293,27 @@ input[type="submit"]:hover{
     margin-bottom: 20px;
     justify-content: center;
 }
+/* Sección Coctails */
+.media {
+    flex-direction: column;
 }
 
-/* Fin sección botánicos */
+/* fin sección Coctails */
+
+/* Sección footer */
+
+.footer-img img{
+    width: 31px;
+}
+
+/* Fin sección footer */
+}
+
+ 
+
+
+
+
 
 @media screen and (max-width:400px) {
     /* Estilos generales */
@@ -324,6 +347,9 @@ input[type="submit"]:hover{
     .parent{
         padding: 0 95px;
     }
+    .media {
+        flex-direction: column;
+    }
 
 
     /* Fin Cocktails */
@@ -332,5 +358,16 @@ input[type="submit"]:hover{
     .website .text-main{
         margin-bottom: 30px;
     }
+    
     /* Fin nosotros */
+    /* Sección footer */
+
+    .footer-img img{
+        width: 21px;
+    }
+    .link-header{
+        font-size: 10px;
+    }
+
+/* Fin sección footer */
 }
