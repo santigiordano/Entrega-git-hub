@@ -1,0 +1,15 @@
+.destilación{
+    background-image:linear-gradient(to top, rgba(255, 241, 235, 0.651) 0%, rgba(172, 225, 249, 0.651) 100%), url("/assets/destilacion-teaser.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    
+    @media screen and (max-width:800px){
+        .destilación{
+        text-align: center;
+        } 
+    }   
+}

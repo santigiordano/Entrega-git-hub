@@ -1,0 +1,41 @@
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	textarea {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+.input {
+	background: transparent;
+	border: 0;
+	color: #E3BEC6;
+	outline: none;
+	border: 1px solid #E3BEC6;
+	padding: 20px 10px;
+	&::placeholder {
+		color: #E3BEC6;
+		font-family: 'raleway', 'sans-serif';
+	}
+}
+input[type="text"] {
+	display: inline-block;
+	width: 49%;
+	margin-bottom: 30px;
+}
+input[type="email"] {
+	display: inline-block;
+	width: 49%;
+	margin-bottom: 30px;
+}
+input[type="submit"] {
+	width: 120px;
+	text-align: center;
+	padding: 14px 0;
+	&:hover {
+		cursor: pointer;
+		color: rgb(226, 149, 194);
+		background: #E3BEC6;
+	}
+}

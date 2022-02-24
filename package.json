@@ -1,0 +1,19 @@
+{
+  "name": "proyeecto-pacific-gin",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">Hi 👋, I'm Giordano Santiago</h1>\r <h3 align=\"center\">Mi Proyecto Final esta basado en uno de mis hobbies que este año se convirtio en algo más profesional ya que realice un curso de preparación de gin desde cero y otro de tipos de tragos con base de gin (Gintender). Espero la pagina sea de se agrado y quedo a disposición por cualquier consulta</h3>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santigiordano/Entrega-git-hub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santigiordano/Entrega-git-hub/issues"
+  },
+  "homepage": "https://github.com/santigiordano/Entrega-git-hub#readme"
+}
