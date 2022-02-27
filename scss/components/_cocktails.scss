@@ -1,5 +1,9 @@
 .background-cocktails{
     background: #CBF1F5;
+
+    .img-nosotros {
+        width: 100%;
+    }
 }
 .parent {
     display: grid;
@@ -9,17 +13,12 @@
     padding: 0 150px;
     grid-auto-flow: dense;
 
-
-@media screen and (max-width:400px) {
-    .parent{
-    padding: 0 95px;
+    .parent img {
+    width: 100%;
     }
-  }   
 }
  
-.parent img {
-    width: 100%;
-}
+
 
 
 

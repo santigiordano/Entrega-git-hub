@@ -6,19 +6,21 @@
 		width: 100%;
 		margin-bottom: 15px;
 	}
-}
-.input {
-	background: transparent;
-	border: 0;
-	color: #E3BEC6;
-	outline: none;
-	border: 1px solid #E3BEC6;
-	padding: 20px 10px;
-	&::placeholder {
+
+	.input {
+		background: transparent;
+		border: 0;
 		color: #E3BEC6;
-		font-family: 'raleway', 'sans-serif';
+		outline: none;
+		border: 1px solid #E3BEC6;
+		padding: 20px 10px;
+		&::placeholder {
+			color: #E3BEC6;
+			font-family: 'raleway', 'sans-serif';
+		}
 	}
 }
+
 input[type="text"] {
 	display: inline-block;
 	width: 49%;

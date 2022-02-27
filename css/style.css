@@ -10,36 +10,31 @@
   position: relative;
   overflow: hidden;
 }
-
-nav {
+.header-style nav {
   padding: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.logo img {
+.header-style nav .logo img {
   width: 50px;
   height: 50px;
   transform: scale(1);
   transition: transform 0.6s;
 }
-.logo img:hover {
+.header-style nav .logo img:hover {
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
   transform: scale(1.03);
   cursor: pointer;
 }
-
-.ul-header {
+.header-style nav .ul-header {
   display: flex;
 }
-
-.li-header {
+.header-style nav .li-header {
   margin-left: 15px;
   list-style: none;
 }
-
-.link-header {
+.header-style nav .li-header .link-header {
   font-size: 15px;
   color: black;
   text-decoration: none;
@@ -49,11 +44,10 @@ nav {
   border-style: solid;
   border-radius: 30px;
 }
-.link-header:hover {
+.header-style nav .li-header .link-header:hover {
   text-decoration: underline;
 }
-
-.wave-header {
+.header-style .wave-header {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -71,6 +65,10 @@ nav {
   position: absolute;
 }
 
+.img-nosotros {
+  width: 100%;
+}
+
 .website {
   display: flex;
   justify-content: space-between;
@@ -79,17 +77,13 @@ nav {
   width: 40%;
 }
 
-.img-nosotros {
-  width: 100%;
-}
-
 .parrafo {
   text-align: center;
   margin-bottom: 20px;
 }
 
 .destilación {
-  background-image: linear-gradient(to top, rgba(255, 241, 235, 0.651) 0%, rgba(172, 225, 249, 0.651) 100%), url("/assets/destilacion-teaser.jpg");
+  background-image: linear-gradient(to top, rgba(255, 241, 235, 0.651) 0%, rgba(174, 225, 249, 0.651) 100%), url("/assets/destilacion-teaser.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -97,14 +91,12 @@ nav {
   position: relative;
   overflow: hidden;
 }
-@media screen and (max-width: 800px) {
-  .destilación .destilación {
-    text-align: center;
-  }
-}
 
 .background-cocktails {
   background: #CBF1F5;
+}
+.background-cocktails .img-nosotros {
+  width: 100%;
 }
 
 .parent {
@@ -115,13 +107,7 @@ nav {
   padding: 0 150px;
   grid-auto-flow: dense;
 }
-@media screen and (max-width: 400px) {
-  .parent .parent {
-    padding: 0 95px;
-  }
-}
-
-.parent img {
+.parent .parent img {
   width: 100%;
 }
 
@@ -134,8 +120,7 @@ nav {
   width: 100%;
   margin-bottom: 15px;
 }
-
-.input {
+.form .input {
   background: transparent;
   border: 0;
   color: #E3BEC6;
@@ -143,7 +128,7 @@ nav {
   border: 1px solid #E3BEC6;
   padding: 20px 10px;
 }
-.input::placeholder {
+.form .input::placeholder {
   color: #E3BEC6;
   font-family: "raleway", "sans-serif";
 }
@@ -175,37 +160,33 @@ footer {
   background: #E3BEC6;
   color: #fff;
 }
-
-.logo-footer {
+footer .footer-desings {
+  text-align: center;
+}
+footer .footer-desings .logo-footer {
   width: 35%;
 }
-
-.footer-img {
+footer .footer-img {
   display: flex;
   justify-content: space-between;
 }
-.footer-img img {
+footer .footer-img img {
   width: 45px;
   margin-left: 1px;
   margin-right: 1px;
 }
-
-.footer-desings {
-  text-align: center;
+footer .footer-img .link-header {
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+  transition: all 0, 5s;
+  padding: 5px 10px;
+  background: rgba(255, 255, 255, 0.61);
+  border-style: solid;
+  border-radius: 30px;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Raleway", sans-serif;
+footer .footer-img .link-header:hover {
+  text-decoration: underline;
 }
 
 .contenedor {
@@ -311,6 +292,19 @@ body {
   .link-header {
     font-size: 10px;
   }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
