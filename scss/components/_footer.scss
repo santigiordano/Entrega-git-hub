@@ -1,5 +1,7 @@
+@import "../base/listas";
+
 footer {
-	background: #E3BEC6;
+	background: nth($bg-color, 2);
 	color: #fff;
 
 	.footer-desings {

@@ -1,13 +1,11 @@
+@import "../base/extends";
+
+
 .header-style {
 	width: 100%;
 	height: 650px;
 	background-image: linear-gradient(to top, rgba(255, 241, 235, 0.651) 0%, rgba(172, 225, 249, 0.651) 100%), url("assets/oceano-pacifico.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	position: relative;
-	overflow: hidden;
+	@extend %bg-image;
 
 	nav {
 		padding: 50px;

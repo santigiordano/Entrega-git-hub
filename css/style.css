@@ -1,14 +1,17 @@
 @charset "UTF-8";
-.header-style {
-  width: 100%;
-  height: 650px;
-  background-image: linear-gradient(to top, rgba(255, 241, 235, 0.651) 0%, rgba(172, 225, 249, 0.651) 100%), url("assets/oceano-pacifico.jpg");
+.destilación, .header-style {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
+}
+
+.header-style {
+  width: 100%;
+  height: 650px;
+  background-image: linear-gradient(to top, rgba(255, 241, 235, 0.651) 0%, rgba(172, 225, 249, 0.651) 100%), url("assets/oceano-pacifico.jpg");
 }
 .header-style nav {
   padding: 50px;
@@ -82,14 +85,17 @@
   margin-bottom: 20px;
 }
 
-.destilación {
-  background-image: linear-gradient(to top, rgba(255, 241, 235, 0.651) 0%, rgba(174, 225, 249, 0.651) 100%), url("/assets/destilacion-teaser.jpg");
+.destilación, .header-style {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
+}
+
+.destilación {
+  background-image: linear-gradient(to top, rgba(255, 241, 235, 0.651) 0%, rgba(174, 225, 249, 0.651) 100%), url("/assets/destilacion-teaser.jpg");
 }
 
 .background-cocktails {
@@ -305,6 +311,15 @@ html {
 
 body {
   font-family: "Raleway", sans-serif;
+}
+
+.header-style, .destilación {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

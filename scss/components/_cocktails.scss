@@ -1,5 +1,7 @@
+@import "../base/listas";
+
 .background-cocktails{
-    background: #CBF1F5;
+    background: nth($bg-color, 1);
 
     .img-nosotros {
         width: 100%;
