@@ -222,6 +222,10 @@ footer .footer-img .link-header:hover {
   margin-bottom: 30px;
 }
 
+.disclaimer {
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .titulo {
     font-size: 35px;
