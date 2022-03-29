@@ -1,7 +1,7 @@
 @import "../base/extends";
 
 .destilación{
-    background-image:linear-gradient(to top, rgba(255, 241, 235, 0.651) 0%, rgba(174, 225, 249, 0.651) 100%), url("/assets/destilacion-teaser.jpg") ;
+    background-image:linear-gradient(to top, rgba(255, 241, 235, 0.651) 0%, rgba(174, 225, 249, 0.651) 100%), url("../assets/destilacion-teaser.jpg") ;
     @extend %bg-image;
 }
 

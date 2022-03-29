@@ -25,6 +25,18 @@
 		font-size: 35px;
 		text-align: center;
 	}
+
+	.img-botella {
+		display: flex;
+		position: relative;
+		align-items: flex-end;
+		margin: 0 50px;
+		img {
+			width: 15%;
+			position: absolute;
+		}
+	}
+
 	.destilación {
 		text-align: center;
 	}
@@ -47,11 +59,29 @@
 	.media {
 		flex-direction: column;
 	}
-	.footer-img {
-		img {
-			width: 31px;
+	.tragos{
+		transform: scale(1);
+		transition: transform 0.6s;
+		&:hover {
+			transform: scaleY(1.05);
+			transform: scale(1.05);
+			cursor: pointer;
 		}
 	}
+	footer {
+		.footer-desings{
+			.logo-footer{
+				width: 45%;
+			}
+		}
+	}
+	footer {
+		.footer-img{
+			img{
+				width: 33px;
+			}
+		}
+	}	
 }
 @media screen and (max-width:400px) {
 	.titulo {
@@ -85,13 +115,33 @@
 			margin-bottom: 30px;
 		}
 	}
-	.footer-img {
-		img {
-			width: 21px;
+	footer {
+		.footer-img{
+			.link-header{
+				font-size: 13px;
+				padding: 10px 10px;
+			}
 		}
-	}
-	.link-header {
-		font-size: 10px;
+	} 
+	
+	footer {
+		.footer-img{
+			img{
+				width: 30px;
+			}
+		}
+	}	
+	
+	footer {
+		.footer-desings{
+			.logo-footer{
+				width: 45%;
+			}
+		}
 	}
 }
 
+	
+	
+
+	

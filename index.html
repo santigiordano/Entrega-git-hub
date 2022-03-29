@@ -28,8 +28,8 @@
     
     <!-- Famiy Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;1,200&display=swap" rel="stylesheet">
     
     <title> Home / Pacific Gin - Descubri el mejor gin de Argentina </title>
 </head>
@@ -52,7 +52,7 @@
                 </ul>
             </div>
         </nav>
-        <h1 class="titulo">- Conoce todo sobre la elaboración de nuestro gin -</h1>
+        <h1 class="titulo">- Conocé todo sobre la elaboración de nuestro gin -</h1>
 
         <!-- Este efecto visual wave lo busque en la siguiente pagina https://smooth.ie -->
         <div class="wave-header" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>  
@@ -70,7 +70,7 @@
     <!-- Inicio sección Nosotros -->
     <section class="container" id="Nosotros">
         <div class="row">
-            <div class="col">
+            <div class="col d-none d-lg-block">
                 <img src="assets/faro2.png" alt="Faro de luz en blanco y negro" class="img-nosotros">
             </div>
             <div class="col">
@@ -101,62 +101,92 @@
     <!-- Fin sección Destilación -->
 
     <!-- Inicio sección Botánicos -->
-    <section class="cards contenedor " id="Botánicos">
+      
+    <section class="p-5 " id="Botánicos">
         <h2 class=" text-center fs-1 titulo">- Botánicos -</h2>
-        <div class="content-cards">
-            <article class="card mb-4">
-                <i class="fas fa-leaf"></i>
+       <div class="row">
+           <div class="col-xl-3 col-lg-12 tarjeta">
+            <article class="mb-4">
                 <h3>Enebro</h3>
-                <p class="fs-5">Las bayas de enebro son un tanto amargas, con matices cítricos y dulces. Se pueden utilizar tanto frescas como secas. </p>
-                <p class="fs-5">El fuerte sabor se debe al elevado contenido de aceites esenciales, resinas, principios amargos, taninos y azúcar.</p>
+                <p class="fs-5 tarjetap">Las bayas de enebro son un tanto amargas, con matices cítricos y dulces. Se pueden utilizar tanto frescas como secas.</p>
+                <p class="fs-5 tarjetap">El fuerte sabor se debe al elevado contenido de aceites esenciales, resinas, principios amargos, taninos y azúcar.</p>
             </article>
-            <article class="card mb-4">
-                <i class="fas fa-bahai"></i>
+           </div>
+           <div class="col-xl-3 col-lg-12 tarjeta">
+            <article class="mb-4">              
                 <h3>Anís estrellado</h3>
-                <p class="fs-5">Presenta un aroma que recuerda al del anís y el hinojo, mientras que su sabor, ligeramente dulce, es parecido al del regaliz.
-                </p>
-                <p class="fs-5">Normalmente se utiliza el fruto entero o en trozos, ya que la semilla es menos aromática.</p>
+                <p class="fs-5 tarjetap">Presenta un aroma que recuerda al del anís y el hinojo, mientras que su sabor, ligeramente dulce, es parecido al del regaliz.</p>
+                <p class="fs-5 tarjetap">Normalmente se utiliza el fruto entero o en trozos, ya que la semilla es menos aromática.</p>
             </article>
-            <article class="card mb-4">
-                <i class="fas fa-bahai"></i>
+           </div>
+           <div class="col-xl-3 col-lg-12 tarjeta">
+            <article class=" mb-4">             
                 <h3>Pimienta rosa</h3>
-                <p class="fs-5">Tiene un sabor picante, dulce y suave, elaborada con bayas rosadas del árbol sudamericano (Schinus terebinthifolius).</p>
+                <p class="fs-5 tarjetap">La pimienta rosada es un fruto elaborada con bayas rosadas del árbol sudamericano (Schinus terebinthifolius) que tiene un sabor picante, dulce y suave, .</p>
+                <p class="fs-5 tarjetap">El aroma es picante, pero también realza las notas más volátiles como las notas cítricas.</p>
             </article>
-            <article class="card mb-4">
-                <i class="fas fa-bahai"></i>
+           </div>
+           <div class="col-xl-3 col-lg-12 tarjeta">
+            <article class=" mb-4">                
                 <h3>Canela</h3>
-                <p class="fs-5"> La canela tiene un sabor dulce y leñoso, con un ligero toque cítrico y picante.</p>
+                <p class="fs-5 tarjetap"> La canela tiene un sabor dulce y leñoso, con un ligero toque cítrico y picante.</p>
+                <p class="fs-5 tarjetap"> Se obtiene de la corteza de las ramas del canelo o cinamomo (“madera dulce”), originaria de Sri Lanka, India, aunque actualmente se cultiva en países tropicales.</p>
             </article>
-        </div>
+           </div>
+       </div>
     </section>
     <!-- Fin sección Botánicos -->
 
      <!-- Inicio sección Cocktails -->
-     <section class="background-cocktails">
+    <section class="background-cocktails">
         <section class="container" id="Cocktails">
-         <div class="row media">
-            <h3 class="text-center fs-1 titulo">- Cocktails -</h3>
-            <div class="col">
-                <img src="assets/collins.jpg" alt="trago - collins" class="img-nosotros mb-4 bd-highlight ">
+            <div class="row media">
+                <h3 class="text-center fs-1 titulo">- Cocktails -</h3>
+                <div class="col mt-3 text-black background-cocktails">
+                    <h4 class="card-title text-center">Collins</h5>
+                    <img src="./assets/collins.jpg" class="card-img tragos" alt="trago - collins">
+                    <div >
+                        <p class="card-text text-center mt-1">Combinación perfecta de gin con soda un poco jugo de limon, almibar simple y lonjas de pepino. </p> 
+                    </div>
+                </div>
+                <div class="col mt-3 text-black background-cocktails">
+                    <h4 class="card-title text-center">Detox</h5>
+                    <img src="./assets/detox.jpg" class="card-img tragos" alt="trago - detox">
+                    <div>
+                        <p class="card-text text-center mt-1">Refrescante trago de gin con jugo de lima, almibar de jengibre y hojas de albahaca. </p> 
+                    </div>
+                </div>
+                <div class="col mt-3 text-black background-cocktails">
+                    <h4 class="card-title text-center">Lemon</h5>
+                    <img src="./assets/lemon gin.jpg" class="card-img tragos" alt="trago - lemon">
+                    <div>
+                        <p class="card-text text-center mt-1">La clásica combinación de gin, piel de limon y agua tónica </p> 
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <img src="assets/detox.jpg" alt="trago - detox" class="img-nosotros mb-4 bd-highlight">
-            </div>
-            <div class="col">
-                <img src="assets/lemon gin.jpg" alt="trago - lemon gin" class="img-nosotros mb-4 bd-highlight">
-            </div>
-         </div>
-         <div class="row media"> 
-            <div class="col">
-                <img src="assets/pomelo y albahaca.jpg" alt="trago - pomelo y albahaca" class="img-nosotros mb-4 bd-highlight">
-            </div>
-            <div class="col">
-                <img src="assets/naranja y menta.jpg" alt="trago - naranja y menta" class="img-nosotros mb-4 bd-highlight">
-            </div>
-            <div class="col">
-                <img src="assets/mandarinbloosom.jpg" alt="trago - mandarinbloosom" class="img-nosotros mb-4 bd-highlight">
-            </div>     
-         </div>
+            <div class="row media"> 
+                <div class="col mt-3 text-black background-cocktails">
+                    <h4 class="card-title text-center">Pomelaca</h5>
+                    <img src="./assets/pomelo y albahaca.jpg" class="card-img tragos" alt="trago - pomelo y albahaca">
+                    <div>
+                        <p class="card-text text-center mt-1">Una trago con armonia, compuesto de nuestro gin junto con piel de pomelo, el agua tónica y hojas de albahaca. </p> 
+                    </div>
+                </div>
+                <div class="col mt-3 text-black background-cocktails">
+                    <h4 class="card-title text-center">Menta y naranja</h5>
+                    <img src="./assets/naranja y menta.jpg" class="card-img tragos" alt="trago - menta y naranja">
+                    <div >
+                    <p class="card-text text-center mt-1">Otro clásico de la casa, contiene nuestro gin acompañado de piel de naranja y hojas de menta fresca. </p> 
+                    </div>
+                </div>
+                <div class="col mt-3 text-black background-cocktails">
+                    <h4 class="card-title text-center">Mandarine Blooson</h5>
+                    <img src="./assets/mandarinbloosom.jpg" class="card-img tragos" alt="trago - mandarinbloosom">
+                    <div>
+                        <p class="card-text text-center mt-1">Trago con mucha dulzura compuesto por nuestro gin, cascara de mandarina, miel y hojas de cédron. </p> 
+                    </div>
+                </div>
+            </div>       
         </section>
      </section>
      
@@ -179,18 +209,22 @@
      <!-- Fin de contacto-->
 
      <!-- Inicio footer -->
-     <footer>
+     <footer class="p-3">
         <div class="footer-desings container">
             <img src="assets/logo-completo.png" alt="logo completo Gin pacific" class="logo-footer">
         </div>
         <div class="footer-img container">
-            <a href="#header" class="link-header"> Volver al inicio</a>
+            <a href="#header" class="link-header">Inicio</a>
             <div>
-                <a href=""><img src="assets/facebook.png" alt=""></a>
-                <a href=""><img src="assets/instagram.png" alt=""></a>
-                <a href=""><img src="assets/whatsapp-logo-variant.png" alt=""></a>
+                <a href="https://facebook.com"><img src="assets/facebook.png" alt=""></a>
+                <a href="https://instagram.com"><img src="assets/instagram.png" alt=""></a>
+                <a href="https://web.whatsapp.com"><img src="assets/whatsapp-logo-variant.png" alt=""></a>
             </div>
-        </div>gstatic
+            
+        </div>
+        <div class="text-center text-black">
+            <p>© 2022 by Santiago Giordano.</p>
+        </div>
      </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
